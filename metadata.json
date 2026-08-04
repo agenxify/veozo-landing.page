@@ -1,0 +1,7 @@
+{
+  "name": "Veozo",
+  "description": "Veozo turns long videos into high-quality viral clips, and publishes them to all social platforms in one click.",
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html data-wf-domain="www.veozo.app" lang="en-US" class="w-mod-js">
+<head>
+  <meta charset="utf-8">
+  <title>Pricing Plans & Tiers | Veozo - #1 AI Content Machine</title>
+  <meta content="Choose the perfect Veozo plan for your content creation. Free, Starter, and Pro plans with AI trend discovery, script writing, 1-click thumbnail generator, and video virality scoring." name="description">
+  <meta content="Pricing Plans & Tiers | Veozo" property="og:title">
+  <meta content="Choose the perfect Veozo plan for your content creation." property="og:description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  
+  <link href="css/opusclip-staging.shared.5e5ce1dc1.min.css" rel="stylesheet" type="text/css" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <script src="js/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: { families: ["Inter:300,400,500,600,700"] }
+    });
+  </script>
+  <link href="images/64351a9e4e9223f5e0f46d64_ico-final.png" rel="shortcut icon" type="image/x-icon">
+
+  <style>
+    body {
+      background-color: #000000 !important;
+      color: #ffffff !important;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+      margin: 0;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Back Home Bar */
+    .back-home-bar {
+      padding: 24px 20px 0;
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+
+    .back-home-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 8px 16px;
+      background: #111111;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .back-home-link:hover {
+      background: #222222;
+      border-color: #ffffff;
+    }
+
+    .pricing-hero {
+      position: relative;
+      padding: 40px 20px 30px;
+      text-align: center;
+      background: #000000;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: #111111;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .hero-h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      max-width: 850px;
+      margin: 0 auto 16px;
+      color: #ffffff;
+    }
+
+    .hero-p {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 660px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+
+    /* Billing Toggle Switch */
+    .billing-toggle-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 50px;
+    }
+
+    .toggle-label {
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.7);
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .toggle-label.active {
+      color: #ffffff;
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 26px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #222222;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: .3s;
+      border-radius: 34px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: #ffffff;
+      transition: .3s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: #ffffff;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(24px);
+      background-color: #000000;
+    }
+
+    .discount-badge {
+      background: #111111;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 100px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Pricing Cards Grid */
+    .pricing-container {
+      max-width: 1150px;
+      margin: 0 auto 80px;
+      padding: 0 20px;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    @media (max-width: 900px) {
+      .pricing-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .pricing-card {
+      background: #0a0a0a;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      padding: 36px 28px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: all 0.2s ease;
+    }
+
+    .pricing-card:hover {
+      border-color: #ffffff;
+      background: #111111;
+    }
+
+    .pricing-card.featured {
+      border: 1px solid #ffffff;
+      background: #111111;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
+    }
+
+    .popular-tag {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ffffff;
+      color: #000000;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 14px;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+
+    .tier-name {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .tier-desc {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 24px;
+      line-height: 1.5;
+      font-weight: 400;
+      min-height: 40px;
+    }
+
+    .tier-price-box {
+      margin-bottom: 24px;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .price-currency {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .price-amount {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      line-height: 1;
+    }
+
+    .price-period {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 400;
+    }
+
+    .tier-cta-btn {
+      display: block;
+      width: 100%;
+      padding: 13px 20px;
+      text-align: center;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      box-sizing: border-box;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      margin-bottom: 28px;
+      border: none;
+    }
+
+    .tier-cta-btn.primary {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    .tier-cta-btn.primary:hover {
+      background: #cccccc;
+    }
+
+    .tier-cta-btn.secondary {
+      background: #161616;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .tier-cta-btn.secondary:hover {
+      background: #222222;
+      border-color: #ffffff;
+    }
+
+    .feature-list-title {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 16px;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex-grow: 1;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.4;
+      font-weight: 400;
+    }
+
+    .feature-check {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1;
+      margin-top: 1px;
+    }
+
+    .feature-item.muted {
+      color: rgba(255, 255, 255, 0.35);
+      text-decoration: line-through;
+    }
+
+    .feature-item.muted .feature-check {
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Comparison Table Section */
+    .comparison-container {
+      max-width: 1150px;
+      margin: 0 auto 100px;
+      padding: 0 20px;
+    }
+
+    .section-title-box {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .table-wrapper {
+      background: #0a0a0a;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      overflow-x: auto;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      min-width: 650px;
+    }
+
+    .comparison-table th, .comparison-table td {
+      padding: 16px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 14px;
+    }
+
+    .comparison-table th {
+      background: #111111;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .comparison-table th.header-tier {
+      text-align: center;
+      width: 20%;
+    }
+
+    .comparison-table td.cell-tier {
+      text-align: center;
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 400;
+    }
+
+    .comparison-table tr.category-row td {
+      background: #141414;
+      font-weight: 600;
+      color: #ffffff;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .check-icon {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .cross-icon {
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* FAQ Section */
+    .faq-container {
+      max-width: 900px;
+      margin: 0 auto 100px;
+      padding: 0 20px;
+    }
+
+    .faq-item {
+      background: #0a0a0a;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 10px;
+      margin-bottom: 14px;
+      overflow: hidden;
+      transition: all 0.2s;
+    }
+
+    .faq-header {
+      padding: 20px 24px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      color: #ffffff;
+    }
+
+    .faq-header:hover {
+      background: #111111;
+    }
+
+    .faq-body {
+      padding: 0 24px 20px;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 14px;
+      line-height: 1.6;
+      display: none;
+      font-weight: 400;
+    }
+
+    .faq-item.active .faq-body {
+      display: block;
+    }
+
+    .faq-icon {
+      transition: transform 0.2s ease;
+      font-size: 1.1rem;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    /* Modal Toast */
+    .checkout-modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.8);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-box {
+      background: #111111;
+      border: 1px solid #ffffff;
+      border-radius: 12px;
+      padding: 32px;
+      max-width: 440px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 14px; right: 16px;
+      background: none;
+      border: none;
+      color: #ffffff;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar to Return to Main Page -->
+  <div class="back-home-bar">
+    <a href="/" class="back-home-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      <span>Back to Homepage</span>
+    </a>
+  </div>
+
+  <!-- Pricing Hero -->
+  <header class="pricing-hero">
+    <div class="badge-pill">
+      <span>Flexible Plans</span>
+    </div>
+    <h1 class="hero-h1">Simple, Transparent Pricing for Creators</h1>
+    <p class="hero-p">Scale your video content machine with AI trend discovery, automated script writing, 1-click thumbnail generation, and virality scoring.</p>
+
+    <!-- Billing Toggle -->
+    <div class="billing-toggle-container">
+      <span class="toggle-label active" id="monthly-label">Monthly Billing</span>
+      <label class="switch">
+        <input type="checkbox" id="billing-toggle">
+        <span class="slider"></span>
+      </label>
+      <span class="toggle-label" id="annual-label">Annual Billing</span>
+      <span class="discount-badge">Save 20%</span>
+    </div>
+  </header>
+
+  <!-- Pricing Cards -->
+  <section class="pricing-container">
+    <div class="pricing-grid">
+
+      <!-- Free Tier Card -->
+      <div class="pricing-card">
+        <div class="tier-name">Free</div>
+        <div class="tier-desc">Essential AI tools to explore trends and write high-converting scripts.</div>
+        <div class="tier-price-box">
+          <span class="price-currency">$</span>
+          <span class="price-amount">0</span>
+          <span class="price-period">/ month</span>
+        </div>
+        <button class="tier-cta-btn secondary" onclick="openCheckoutModal('Free')">Get Started Free</button>
+
+        <div class="feature-list-title">What's Included:</div>
+        <ul class="feature-list">
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>Trend Discovery (Basic topic search)</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>AI Script Writer (3 scripts / month)</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>SEO Optimizer (Basic score check)</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>AI Keywords & Tags (5 searches / mo)</span>
+          </li>
+          <li class="feature-item muted">
+            <span class="feature-check">✕</span>
+            <span>AI Thumbnail Generator</span>
+          </li>
+          <li class="feature-item muted">
+            <span class="feature-check">✕</span>
+            <span>AI Video Virality Score (Out of 10)</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Starter Tier Card (Featured) -->
+      <div class="pricing-card featured">
+        <div class="popular-tag">Most Popular</div>
+        <div class="tier-name">Starter</div>
+        <div class="tier-desc">Designed for active creators, YouTubers, and social media managers.</div>
+        <div class="tier-price-box">
+          <span class="price-currency">$</span>
+          <span class="price-amount" id="starter-price">19</span>
+          <span class="price-period" id="starter-period">/ month</span>
+        </div>
+        <button class="tier-cta-btn primary" onclick="openCheckoutModal('Starter')">Start 7-Day Free Trial</button>
+
+        <div class="feature-list-title">Everything in Free, plus:</div>
+        <ul class="feature-list">
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>Trend Discovery (Real-time niche insights)</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>Unlimited AI Script Writer</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>Full SEO Optimizer & title rewriter</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>AI Keywords & Tags (Unlimited)</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>AI Thumbnail Generator (25 / mo)</span>
+          </li>
+          <li class="feature-item muted">
+            <span class="feature-check">✕</span>
+            <span>AI Video Virality Score (Out of 10)</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Pro Tier Card -->
+      <div class="pricing-card">
+        <div class="tier-name">Pro</div>
+        <div class="tier-desc">For high-output channels, agencies, and professional studios.</div>
+        <div class="tier-price-box">
+          <span class="price-currency">$</span>
+          <span class="price-amount" id="pro-price">49</span>
+          <span class="price-period" id="pro-period">/ month</span>
+        </div>
+        <button class="tier-cta-btn secondary" onclick="openCheckoutModal('Pro')">Upgrade to Pro</button>
+
+        <div class="feature-list-title">Everything in Starter, plus:</div>
+        <ul class="feature-list">
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>AI Video Virality Score (Full 10-pt breakdown)</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>Predictive Trend Discovery & viral alerts</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>AI Script Writer (Unlimited + tone customization)</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>AI Thumbnail Generator (150 / mo)</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>Competitor Keyword & Tag Spy</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>Priority 24/7 Creator Support</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Detailed Perk Comparison Table -->
+  <section class="comparison-container">
+    <div class="section-title-box">
+      <div class="badge-pill">Feature Matrix</div>
+      <h2 class="section-title">Compare Plan Features</h2>
+      <p class="section-subtitle">Detailed breakdown of perks, limits, and AI capabilities across all tiers.</p>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Features & Specs</th>
+            <th class="header-tier">Free</th>
+            <th class="header-tier">Starter</th>
+            <th class="header-tier">Pro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- AI Content Suite -->
+          <tr class="category-row">
+            <td colspan="4">AI Content Engine Suite</td>
+          </tr>
+          <tr>
+            <td>AI Trend Discovery Engine</td>
+            <td class="cell-tier">Basic Topics</td>
+            <td class="cell-tier">Real-Time Niche Trends</td>
+            <td class="cell-tier"><strong>Predictive Viral AI Alerts</strong></td>
+          </tr>
+          <tr>
+            <td>AI Script Writer</td>
+            <td class="cell-tier">3 scripts / mo</td>
+            <td class="cell-tier">Unlimited</td>
+            <td class="cell-tier"><strong>Unlimited + Tone Customization</strong></td>
+          </tr>
+          <tr>
+            <td>SEO Tag & Keyword Reachability</td>
+            <td class="cell-tier">Basic Analysis</td>
+            <td class="cell-tier">Advanced Optimizer</td>
+            <td class="cell-tier"><strong>Full Viral Audit & Title Rewriter</strong></td>
+          </tr>
+          <tr>
+            <td>AI Keywords & Tags Generator</td>
+            <td class="cell-tier">5 searches / mo</td>
+            <td class="cell-tier">Unlimited</td>
+            <td class="cell-tier"><strong>Unlimited + Competitor Spy</strong></td>
+          </tr>
+
+          <!-- AI Visuals & Analytics -->
+          <tr class="category-row">
+            <td colspan="4">AI Visuals & Virality Analytics</td>
+          </tr>
+          <tr>
+            <td>1-Click AI Thumbnail Generator</td>
+            <td class="cell-tier"><span class="cross-icon">✕</span></td>
+            <td class="cell-tier">25 / month</td>
+            <td class="cell-tier"><strong>150 / month</strong></td>
+          </tr>
+          <tr>
+            <td>AI Video Virality Score (Out of 10)</td>
+            <td class="cell-tier"><span class="cross-icon">✕</span></td>
+            <td class="cell-tier"><span class="cross-icon">✕</span></td>
+            <td class="cell-tier"><strong>Full 10-Point Score & Breakdown</strong></td>
+          </tr>
+
+          <!-- Workflow & Support -->
+          <tr class="category-row">
+            <td colspan="4">Workflow & Support</td>
+          </tr>
+          <tr>
+            <td>Multi-Language AI Support (20+ langs)</td>
+            <td class="cell-tier"><span class="cross-icon">✕</span></td>
+            <td class="cell-tier"><span class="check-icon">✓</span></td>
+            <td class="cell-tier"><span class="check-icon">✓</span></td>
+          </tr>
+          <tr>
+            <td>Developer API Access</td>
+            <td class="cell-tier"><span class="cross-icon">✕</span></td>
+            <td class="cell-tier"><span class="cross-icon">✕</span></td>
+            <td class="cell-tier"><span class="check-icon">✓</span></td>
+          </tr>
+          <tr>
+            <td>Support SLA</td>
+            <td class="cell-tier">Community</td>
+            <td class="cell-tier">Priority Email</td>
+            <td class="cell-tier"><strong>24/7 Priority Support</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-container">
+    <div style="text-align: center; margin-bottom: 40px;">
+      <div class="badge-pill">FAQ</div>
+      <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 600; margin-bottom: 10px; color: #ffffff;">Frequently Asked Questions</h2>
+      <p style="color: rgba(255,255,255,0.6); font-size: 1rem; font-weight: 400;">Got questions about our plans? We've got answers.</p>
+    </div>
+
+    <div class="faq-item active">
+      <div class="faq-header">
+        <span>Can I upgrade, downgrade, or cancel my plan anytime?</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-body">
+        Yes! You can adjust or cancel your subscription at any time directly from your dashboard settings. If you upgrade, your new AI limits apply immediately with prorated billing.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-header">
+        <span>What happens if I reach my monthly AI thumbnail limit?</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-body">
+        If you hit your monthly AI thumbnail generation limit before your reset date, you can either upgrade your plan or purchase an add-on thumbnail pack directly from your billing dashboard.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-header">
+        <span>How does the 7-day free trial for Starter work?</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-body">
+        When you choose Starter, you get full access to all Starter features for 7 days with zero upfront charge. You can cancel anytime before the 7 days end without being charged.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-header">
+        <span>Do you offer discounts for non-profits or educational creators?</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-body">
+        We offer a 30% discount for registered students, educators, and non-profit organizations. Reach out to support@veozo.app with your credentials to get your discount code.
+      </div>
+    </div>
+  </section>
+
+  <!-- Checkout Simulation Modal -->
+  <div class="checkout-modal" id="checkoutModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeCheckoutModal()">✕</button>
+      <div class="badge-pill" style="margin-bottom: 12px;">Plan Selected</div>
+      <h3 style="font-size: 1.5rem; font-weight: 600; color: #ffffff; margin-bottom: 8px;" id="modal-plan-title">Starter Plan</h3>
+      <p style="font-size: 14px; color: rgba(255,255,255,0.7); margin-bottom: 24px;" id="modal-plan-desc">Redirecting to secure payment checkout...</p>
+      
+      <div style="padding: 16px; background: #0a0a0a; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 20px; text-align: left;">
+        <div style="display: flex; justify-content: space-between; font-size: 14px; color: #ffffff; margin-bottom: 6px;">
+          <span>Selected Tier:</span>
+          <strong id="modal-tier-name">Starter</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-size: 14px; color: #ffffff;">
+          <span>Total Billed:</span>
+          <strong id="modal-tier-price">$19 / mo</strong>
+        </div>
+      </div>
+
+      <button onclick="closeCheckoutModal()" style="width: 100%; background: #ffffff; color: #000000; border: none; padding: 12px; font-weight: 600; border-radius: 6px; cursor: pointer;">Continue to Dashboard</button>
+    </div>
+  </div>
+
+  <!-- Duplicated Exact Footer from Homepage -->
+  <footer data-element="footer" data-wf--ca-footer--variant="0625" class="a-ca_footer w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">
+    <div class="a_custom-code w-embed w-script">
+      <script>
+      "use strict";
+      document.addEventListener('DOMContentLoaded', () => {
+          const footerYearEl = document.querySelector('[data-element="footer-year"]');
+          if (footerYearEl) {
+              const currentUTCYear = new Date().getUTCFullYear();
+              footerYearEl.textContent = currentUTCYear.toString();
+          }
+      });
+      </script>
+    </div>
+    <div class="a-ca_padding-global">
+      <div class="a-ca_container-large w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">
+        <div class="a-ca_footer_wrapper w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">
+          <div class="a-ca_footer_links-grid w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">
+            <div class="a-ca_footer_links-col_wrapper">
+              <div class="a-ca_footer_links-col">
+                <h3 class="a-ca_footer_h w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">Company</h3>
+                <div class="a-ca_footer_links w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">
+                  <a id="footer-contact-us-link" href="contact.html" class="a-ca_footer_link w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">Contact Us</a>
+                  <a id="footer-pricing-link" href="pricing.html" class="a-ca_footer_link w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">Pricing</a>
+                </div>
+              </div>
+            </div>
+            <div class="a-ca_footer_links-col">
+              <h3 class="a-ca_footer_h w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">Product</h3>
+              <div class="a-ca_footer_links w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">
+                <a href="/#trend-discovery" class="a-ca_footer_link w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">Trend Discovery</a>
+                <a href="/#script-writer" class="a-ca_footer_link w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">AI Script Writer</a>
+                <a href="/#seo-optimizer" class="a-ca_footer_link w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">SEO Optimizer</a>
+                <a href="/#thumbnail-generator" class="a-ca_footer_link w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">AI Thumbnail generator</a>
+                <a href="/#keywords-tags" class="a-ca_footer_link w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">AI Keywords & Tags</a>
+                <a href="/#video-score" class="a-ca_footer_link w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">AI Video Score</a>
+              </div>
+            </div>
+            <div class="a-ca_footer_links-col">
+              <h3 class="a-ca_footer_h w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">Trust and Legal</h3>
+              <div class="a-ca_footer_links w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">
+                <a href="https://www.termsfeed.com/live/62d28777-2bf6-40a2-af63-fdf32205257c" class="a-ca_footer_link w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">Terms and Conditions</a>
+                <a href="https://www.termsfeed.com/live/383574cf-1dde-45cf-9325-bf57a196028e" class="a-ca_footer_link w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">Privacy Policy</a>
+                <a href="https://www.termsfeed.com/live/a925b17e-4e56-4873-bd59-d44b5fe83feb" class="a-ca_footer_link w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">Cookies Preferences</a>
+              </div>
+            </div>
+          </div>
+          <div class="a-ca_footer_icons-and-locale w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">
+            <div data-hover="false" data-delay="0" data-element="footer-locale-switcher" class="a-ca_footer_locale-dropdown w-variant-8382a2a2-7662-094e-2d38-e058b120aad6 w-dropdown">
+              <div data-element="footer-locale-switcher-toggle" class="a-ca_footer_locale-dropdown_toggle w-variant-8382a2a2-7662-094e-2d38-e058b120aad6 w-dropdown-toggle">
+                <div class="a-ca_footer_locale-dropdown_toggle_text-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="none" viewBox="0 0 18 19" class="a-ca_footer_locale-dropdown_toggle_icon w-variant-8382a2a2-7662-094e-2d38-e058b120aad6"><path fill="currentColor" fill-rule="evenodd" d="M9 2.995a6.825 6.825 0 1 0 0 13.65 6.825 6.825 0 0 0 0-13.65M.825 9.82a8.175 8.175 0 1 1 16.35 0 8.175 8.175 0 0 1-16.35 0" clip-rule="evenodd"></path><path fill="currentColor" fill-rule="evenodd" d="M9.478 2a.45.45 0 0 1 .63.085l-.358.273.358-.273.002.002.002.003.006.008.022.03.078.111q.101.146.268.419c.22.363.512.892.802 1.565a14.2 14.2 0 0 1 1.162 5.598c0 2.325-.581 4.252-1.162 5.597a13 13 0 0 1-.802 1.566 9 9 0 0 1-.346.529l-.022.03-.007.009-.002.002v.001l-.359-.271.359.271a.45.45 0 0 1-.718-.543l.004-.005.016-.021.064-.093q.088-.126.242-.376c.201-.333.473-.826.745-1.456a13.3 13.3 0 0 0 1.088-5.24c0-2.175-.544-3.98-1.088-5.241a12 12 0 0 0-.745-1.456 8 8 0 0 0-.306-.468l-.016-.022-.003-.004M9.478 2a.45.45 0 0 0-.086.63zM8.608 2.63l-.003.004-.016.022-.064.092q-.088.126-.242.376c-.202.333-.473.826-.745 1.456A13.3 13.3 0 0 0 6.45 9.82c0 2.175.544 3.98 1.088 5.241.272.63.543 1.123.745 1.456a8 8 0 0 0 .306.469l.016.021.003.004a.45.45 0 0 1-.716.545l.358-.272-.358.272-.002-.002-.002-.002-.006-.01-.022-.03-.078-.11a9 9 0 0 1-.268-.419c-.22-.363-.512-.892-.802-1.565A14.2 14.2 0 0 1 5.55 9.82c0-2.326.581-4.252 1.162-5.598.29-.673.581-1.202.802-1.565a9 9 0 0 1 .346-.53l.022-.03.006-.008.002-.003h.001s0-.002.359.27l-.359-.27a.45.45 0 0 1 .717.543" clip-rule="evenodd"></path><path fill="currentColor" fill-rule="evenodd" d="m1.972 12.445-.154-.423a.45.45 0 0 0 .309.845l.003-.001.017-.006.078-.026a9 9 0 0 1 .324-.097c.29-.08.728-.19 1.308-.3 1.16-.22 2.89-.442 5.143-.442 2.254 0 3.983.222 5.143.442.58.11 1.018.22 1.308.3a9 9 0 0 1 .401.123l.018.006.003.001a.45.45 0 0 0 .31-.845l-.153.417.152-.417h-.001l-.003-.002-.007-.002-.025-.009-.095-.031a9 9 0 0 0-.358-.107 17 17 0 0 0-1.383-.319c-1.212-.23-2.997-.457-5.31-.457s-4.098.227-5.31.457c-.606.115-1.07.23-1.383.319a9 9 0 0 0-.453.138l-.025.009-.008.002-.002.001h-.001zM1.541 7.064a.45.45 0 0 1 .561-.3l-.13.43.13-.43h.001l.005.002.024.006q.03.01.096.027.128.037.38.1c.335.082.824.192 1.439.303 1.23.221 2.96.443 4.953.443 1.992 0 3.722-.222 4.953-.443a23 23 0 0 0 1.82-.403l.095-.027.024-.006.005-.002.13.43.13.431-.003.001-.007.003-.029.008-.107.03q-.14.04-.404.105c-.35.087-.859.201-1.495.315-1.27.229-3.055.458-5.112.458s-3.842-.229-5.112-.458a24 24 0 0 1-1.9-.42l-.106-.03-.029-.008-.008-.003h-.002l.13-.431-.13.43a.45.45 0 0 1-.302-.56m14.357-.3a.45.45 0 0 1 .26.861l-.13-.43" clip-rule="evenodd"></path></svg>
+                  <div>English</div>
+                </div>
+                <img src="images/67d448eff68f0e7efb0375ce_nav-arrow-down.svg" loading="lazy" data-element="footer-locale-switcher-arrow" alt="arrow icon" class="a-ca_footer_locale-dropdown_toggle_arrow w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">
+              </div>
+              <nav class="a-ca_footer_locale-dropdown_list w-variant-8382a2a2-7662-094e-2d38-e058b120aad6 w-dropdown-list">
+                <div class="a-ca_footer_locale-dropdown_list_wrapper w-variant-8382a2a2-7662-094e-2d38-e058b120aad6 w-locales-list">
+                  <div role="list" class="a-ca_footer_locales_list w-variant-8382a2a2-7662-094e-2d38-e058b120aad6 w-locales-items">
+                    <div role="listitem" class="a-ca_footer_locale w-locales-item">
+                      <a hreflang="en-US" href="/" aria-current="page" class="a-ca_footer_locale_link w-variant-8382a2a2-7662-094e-2d38-e058b120aad6 w-inline-block w--current">
+                        <div>English (US)</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="a-ca_footer_divider w-variant-8382a2a2-7662-094e-2d38-e058b120aad6"></div>
+          <div class="a-ca_footer_bottom w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">
+            <div class="opacity-50">
+              <div class="a_display-inline w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">© <span data-element="footer-year">2026</span> </div>
+              <div class="a_display-inline w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">Veozo by Veozo Inc. All rights reserved.</div>
+            </div>
+            <div class="a-ca_footer_socials w-variant-8382a2a2-7662-094e-2d38-e058b120aad6">
+              <a aria-label="YouTube" href="https://www.youtube.com/@veozo" target="_blank" class="a-ca_footer_social-link w-variant-8382a2a2-7662-094e-2d38-e058b120aad6 w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="none" viewBox="0 0 24 24" class="a-ca_footer_social-link-icon"><path fill="currentColor" fill-rule="evenodd" d="M20.936 6.027c.31.312.533.7.646 1.126C22 8.723 22 12 22 12s0 3.275-.418 4.845a2.52 2.52 0 0 1-1.768 1.78c-1.564.42-7.814.42-7.814.42s-6.25 0-7.814-.42a2.51 2.51 0 0 1-1.768-1.78C2 15.274 2 11.999 2 11.999s0-3.275.418-4.846a2.51 2.51 0 0 1 1.768-1.78C5.75 4.954 12 4.954 12 4.954s6.25 0 7.814.42c.424.116.811.342 1.122.654m-5.754 5.972L9.955 9.025v5.948z" clip-rule="evenodd"></path></svg></a>
+
+
+
+
+              <a aria-label="Instagram" href="https://www.instagram.com/veozo/?hl=en" target="_blank" class="a-ca_footer_social-link w-variant-8382a2a2-7662-094e-2d38-e058b120aad6 w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="none" viewBox="0 0 24 24" class="a-ca_footer_social-link-icon"><path fill="currentColor" d="M17.33 7.852a1.2 1.2 0 1 1-.005-2.4 1.2 1.2 0 0 1 .004 2.4"></path><path fill="currentColor" fill-rule="evenodd" d="M12.01 17.134a5.134 5.134 0 1 1-.02-10.268 5.134 5.134 0 0 1 .02 10.268m-.017-8.467a3.333 3.333 0 1 0 .013 6.667 3.333 3.333 0 0 0-.013-6.667" clip-rule="evenodd"></path><path fill="currentColor" fill-rule="evenodd" d="M5.433 2.539c.635-.25 1.361-.42 2.425-.47 1.067-.05 1.408-.063 4.123-.068s3.056.005 4.123.053c1.064.046 1.791.214 2.427.46a4.9 4.9 0 0 1 1.774 1.15c.557.554.9 1.111 1.156 1.768.249.636.42 1.362.47 2.427.05 1.066.063 1.406.068 4.122.005 2.715-.006 3.056-.053 4.123-.046 1.064-.213 1.791-.46 2.427a4.9 4.9 0 0 1-1.15 1.774c-.554.557-1.11.9-1.768 1.157-.636.248-1.362.418-2.426.47-1.067.05-1.407.062-4.123.067-2.715.005-3.056-.005-4.122-.052s-1.792-.214-2.428-.46a4.9 4.9 0 0 1-1.774-1.15 4.9 4.9 0 0 1-1.156-1.77c-.25-.635-.419-1.361-.47-2.425-.05-1.067-.063-1.408-.068-4.123s.006-3.056.052-4.122c.047-1.065.214-1.792.46-2.429a4.9 4.9 0 0 1 1.15-1.773 4.9 4.9 0 0 1 1.77-1.156m.685 17.268c.353.135.882.297 1.857.34 1.055.046 1.371.056 4.04.05s2.987-.016 4.041-.066c.974-.046 1.504-.21 1.856-.347.466-.182.799-.4 1.148-.75.35-.351.566-.684.746-1.151.136-.354.298-.883.34-1.858.047-1.054.057-1.37.051-4.04-.005-2.67-.016-2.987-.066-4.041-.046-.975-.21-1.504-.347-1.855-.183-.468-.4-.8-.75-1.15a3.1 3.1 0 0 0-1.152-.745c-.353-.137-.883-.298-1.857-.34-1.055-.047-1.371-.056-4.041-.051s-2.985.016-4.04.066c-.975.046-1.503.21-1.856.347-.466.183-.799.4-1.148.75-.35.351-.566.684-.746 1.152-.136.353-.299.883-.34 1.857-.047 1.055-.056 1.371-.051 4.04s.016 2.987.066 4.04c.045.976.21 1.505.347 1.857.183.467.4.8.75 1.149.351.348.685.565 1.152.746" clip-rule="evenodd"></path></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Billing Toggle Switch Handler
+    const billingToggle = document.getElementById('billing-toggle');
+    const monthlyLabel = document.getElementById('monthly-label');
+    const annualLabel = document.getElementById('annual-label');
+    const starterPrice = document.getElementById('starter-price');
+    const starterPeriod = document.getElementById('starter-period');
+    const proPrice = document.getElementById('pro-price');
+    const proPeriod = document.getElementById('pro-period');
+
+    billingToggle.addEventListener('change', function() {
+      if (this.checked) {
+        // Annual
+        monthlyLabel.classList.remove('active');
+        annualLabel.classList.add('active');
+        starterPrice.textContent = '15';
+        starterPeriod.textContent = '/ month (billed annually)';
+        proPrice.textContent = '39';
+        proPeriod.textContent = '/ month (billed annually)';
+      } else {
+        // Monthly
+        annualLabel.classList.remove('active');
+        monthlyLabel.classList.add('active');
+        starterPrice.textContent = '19';
+        starterPeriod.textContent = '/ month';
+        proPrice.textContent = '49';
+        proPeriod.textContent = '/ month';
+      }
+    });
+
+    monthlyLabel.addEventListener('click', () => { billingToggle.checked = false; billingToggle.dispatchEvent(new Event('change')); });
+    annualLabel.addEventListener('click', () => { billingToggle.checked = true; billingToggle.dispatchEvent(new Event('change')); });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const parent = header.parentElement;
+        parent.classList.toggle('active');
+      });
+    });
+
+    // Checkout Modal Handler
+    function openCheckoutModal(tierName) {
+      const isAnnual = billingToggle.checked;
+      let priceText = '$0 / mo';
+      if (tierName === 'Starter') {
+        priceText = isAnnual ? '$15 / mo ($180 billed annually)' : '$19 / mo';
+      } else if (tierName === 'Pro') {
+        priceText = isAnnual ? '$39 / mo ($468 billed annually)' : '$49 / mo';
+      }
+
+      document.getElementById('modal-plan-title').textContent = tierName + ' Plan';
+      document.getElementById('modal-tier-name').textContent = tierName;
+      document.getElementById('modal-tier-price').textContent = priceText;
+      document.getElementById('modal-plan-desc').textContent = tierName === 'Free' ? 'Activating your free creator account limits...' : 'Starting your 7-day free trial on the ' + tierName + ' plan...';
+
+      document.getElementById('checkoutModal').style.display = 'flex';
+    }
+
+    function closeCheckoutModal() {
+      document.getElementById('checkoutModal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
