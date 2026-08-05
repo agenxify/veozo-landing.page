@@ -190,11 +190,75 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
       align-items: stretch;
+      margin-bottom: 40px;
     }
 
     @media (max-width: 900px) {
       .pricing-grid {
         grid-template-columns: 1fr;
+      }
+    }
+
+    /* Free Plan Rectangle */
+    .free-plan-rectangle {
+      background: #0a0a0a;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 80px;
+      transition: all 0.2s ease;
+    }
+
+    .free-plan-rectangle:hover {
+      border-color: rgba(255, 255, 255, 0.4);
+      background: #111111;
+    }
+
+    .free-plan-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .free-plan-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .free-plan-desc {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .free-plan-cta {
+      padding: 10px 24px;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #ffffff;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .free-plan-cta:hover {
+      background: #ffffff;
+      color: #000000;
+      border-color: #ffffff;
+    }
+
+    @media (max-width: 600px) {
+      .free-plan-rectangle {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
       }
     }
 
@@ -563,59 +627,18 @@
   <section class="pricing-container">
     <div class="pricing-grid">
 
-      <!-- Free Tier Card -->
+      <!-- Starter Tier Card -->
       <div class="pricing-card">
-        <div class="tier-name">Free</div>
-        <div class="tier-desc">Essential AI tools to explore trends and write high-converting scripts.</div>
-        <div class="tier-price-box">
-          <span class="price-currency">$</span>
-          <span class="price-amount">0</span>
-          <span class="price-period">/ month</span>
-        </div>
-        <button class="tier-cta-btn secondary" onclick="openCheckoutModal('Free')">Get Started Free</button>
-
-        <div class="feature-list-title">What's Included:</div>
-        <ul class="feature-list">
-          <li class="feature-item">
-            <span class="feature-check">✓</span>
-            <span>Trend Discovery (Basic topic search)</span>
-          </li>
-          <li class="feature-item">
-            <span class="feature-check">✓</span>
-            <span>AI Script Writer (3 scripts / month)</span>
-          </li>
-          <li class="feature-item">
-            <span class="feature-check">✓</span>
-            <span>SEO Optimizer (Basic score check)</span>
-          </li>
-          <li class="feature-item">
-            <span class="feature-check">✓</span>
-            <span>AI Keywords & Tags (5 searches / mo)</span>
-          </li>
-          <li class="feature-item muted">
-            <span class="feature-check">✕</span>
-            <span>AI Thumbnail Generator</span>
-          </li>
-          <li class="feature-item muted">
-            <span class="feature-check">✕</span>
-            <span>AI Video Virality Score (Out of 10)</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Starter Tier Card (Featured) -->
-      <div class="pricing-card featured">
-        <div class="popular-tag">Most Popular</div>
         <div class="tier-name">Starter</div>
-        <div class="tier-desc">Designed for active creators, YouTubers, and social media managers.</div>
+        <div class="tier-desc">Perfect for growing creators starting their AI content journey.</div>
         <div class="tier-price-box">
           <span class="price-currency">$</span>
           <span class="price-amount" id="starter-price">19</span>
           <span class="price-period" id="starter-period">/ month</span>
         </div>
-        <button class="tier-cta-btn primary" onclick="openCheckoutModal('Starter')">Start 7-Day Free Trial</button>
+        <button class="tier-cta-btn secondary" onclick="openCheckoutModal('Starter')">Start 7-Day Trial</button>
 
-        <div class="feature-list-title">Everything in Free, plus:</div>
+        <div class="feature-list-title">Core Features:</div>
         <ul class="feature-list">
           <li class="feature-item">
             <span class="feature-check">✓</span>
@@ -639,7 +662,44 @@
           </li>
           <li class="feature-item muted">
             <span class="feature-check">✕</span>
-            <span>AI Video Virality Score (Out of 10)</span>
+            <span>AI Video Virality Score</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Clipper Tier Card (Featured) -->
+      <div class="pricing-card featured">
+        <div class="popular-tag">Best Value</div>
+        <div class="tier-name">Clipper</div>
+        <div class="tier-desc">The sweet spot for active creators publishing 2-3 videos per week.</div>
+        <div class="tier-price-box">
+          <span class="price-currency">$</span>
+          <span class="price-amount" id="clipper-price">29</span>
+          <span class="price-period" id="clipper-period">/ month</span>
+        </div>
+        <button class="tier-cta-btn primary" onclick="openCheckoutModal('Clipper')">Go Clipper</button>
+
+        <div class="feature-list-title">Everything in Starter, plus:</div>
+        <ul class="feature-list">
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>AI Thumbnail Generator (75 / mo)</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>Basic AI Video Virality Score</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>Predictive Viral Alerts (Basic)</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>Multi-Language AI Support</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>Priority Email Support</span>
           </li>
         </ul>
       </div>
@@ -650,28 +710,20 @@
         <div class="tier-desc">For high-output channels, agencies, and professional studios.</div>
         <div class="tier-price-box">
           <span class="price-currency">$</span>
-          <span class="price-amount" id="pro-price">49</span>
+          <span class="price-amount" id="pro-price">69</span>
           <span class="price-period" id="pro-period">/ month</span>
         </div>
         <button class="tier-cta-btn secondary" onclick="openCheckoutModal('Pro')">Upgrade to Pro</button>
 
-        <div class="feature-list-title">Everything in Starter, plus:</div>
+        <div class="feature-list-title">Everything in Clipper, plus:</div>
         <ul class="feature-list">
           <li class="feature-item">
             <span class="feature-check">✓</span>
-            <span>AI Video Virality Score (Full 10-pt breakdown)</span>
+            <span>AI Video Virality Score (Full breakdown)</span>
           </li>
           <li class="feature-item">
             <span class="feature-check">✓</span>
-            <span>Predictive Trend Discovery & viral alerts</span>
-          </li>
-          <li class="feature-item">
-            <span class="feature-check">✓</span>
-            <span>AI Script Writer (Unlimited + tone customization)</span>
-          </li>
-          <li class="feature-item">
-            <span class="feature-check">✓</span>
-            <span>AI Thumbnail Generator (150 / mo)</span>
+            <span>AI Thumbnail Generator (250 / mo)</span>
           </li>
           <li class="feature-item">
             <span class="feature-check">✓</span>
@@ -681,9 +733,22 @@
             <span class="feature-check">✓</span>
             <span>Priority 24/7 Creator Support</span>
           </li>
+          <li class="feature-item">
+            <span class="feature-check">✓</span>
+            <span>Developer API Access</span>
+          </li>
         </ul>
       </div>
 
+    </div>
+
+    <!-- Free Plan Rectangle -->
+    <div class="free-plan-rectangle">
+      <div class="free-plan-info">
+        <div class="free-plan-title">Just getting started? Try our Free Plan</div>
+        <div class="free-plan-desc">Get 3 scripts, basic trend discovery, and SEO tools every month at zero cost.</div>
+      </div>
+      <a href="#" class="free-plan-cta" onclick="openCheckoutModal('Free'); return false;">Start for Free</a>
     </div>
   </section>
 
@@ -702,77 +767,56 @@
             <th>Features & Specs</th>
             <th class="header-tier">Free</th>
             <th class="header-tier">Starter</th>
+            <th class="header-tier">Clipper</th>
             <th class="header-tier">Pro</th>
           </tr>
         </thead>
         <tbody>
           <!-- AI Content Suite -->
           <tr class="category-row">
-            <td colspan="4">AI Content Engine Suite</td>
+            <td colspan="5">AI Content Engine Suite</td>
           </tr>
           <tr>
-            <td>AI Trend Discovery Engine</td>
-            <td class="cell-tier">Basic Topics</td>
-            <td class="cell-tier">Real-Time Niche Trends</td>
-            <td class="cell-tier"><strong>Predictive Viral AI Alerts</strong></td>
+            <td>AI Trend Discovery</td>
+            <td class="cell-tier">Basic</td>
+            <td class="cell-tier">Real-Time</td>
+            <td class="cell-tier">Real-Time</td>
+            <td class="cell-tier"><strong>Predictive</strong></td>
           </tr>
           <tr>
             <td>AI Script Writer</td>
-            <td class="cell-tier">3 scripts / mo</td>
+            <td class="cell-tier">3 / mo</td>
             <td class="cell-tier">Unlimited</td>
-            <td class="cell-tier"><strong>Unlimited + Tone Customization</strong></td>
-          </tr>
-          <tr>
-            <td>SEO Tag & Keyword Reachability</td>
-            <td class="cell-tier">Basic Analysis</td>
-            <td class="cell-tier">Advanced Optimizer</td>
-            <td class="cell-tier"><strong>Full Viral Audit & Title Rewriter</strong></td>
-          </tr>
-          <tr>
-            <td>AI Keywords & Tags Generator</td>
-            <td class="cell-tier">5 searches / mo</td>
             <td class="cell-tier">Unlimited</td>
-            <td class="cell-tier"><strong>Unlimited + Competitor Spy</strong></td>
-          </tr>
-
-          <!-- AI Visuals & Analytics -->
-          <tr class="category-row">
-            <td colspan="4">AI Visuals & Virality Analytics</td>
+            <td class="cell-tier"><strong>Unlimited</strong></td>
           </tr>
           <tr>
-            <td>1-Click AI Thumbnail Generator</td>
+            <td>AI Thumbnail Generator</td>
             <td class="cell-tier"><span class="cross-icon">✕</span></td>
-            <td class="cell-tier">25 / month</td>
-            <td class="cell-tier"><strong>150 / month</strong></td>
+            <td class="cell-tier">25 / mo</td>
+            <td class="cell-tier">75 / mo</td>
+            <td class="cell-tier"><strong>250 / mo</strong></td>
           </tr>
           <tr>
-            <td>AI Video Virality Score (Out of 10)</td>
+            <td>AI Video Virality Score</td>
             <td class="cell-tier"><span class="cross-icon">✕</span></td>
             <td class="cell-tier"><span class="cross-icon">✕</span></td>
-            <td class="cell-tier"><strong>Full 10-Point Score & Breakdown</strong></td>
-          </tr>
-
-          <!-- Workflow & Support -->
-          <tr class="category-row">
-            <td colspan="4">Workflow & Support</td>
+            <td class="cell-tier">Basic</td>
+            <td class="cell-tier"><strong>Full Breakdown</strong></td>
           </tr>
           <tr>
-            <td>Multi-Language AI Support (20+ langs)</td>
-            <td class="cell-tier"><span class="cross-icon">✕</span></td>
-            <td class="cell-tier"><span class="check-icon">✓</span></td>
-            <td class="cell-tier"><span class="check-icon">✓</span></td>
+            <td>SEO & Keyword Tools</td>
+            <td class="cell-tier">Basic</td>
+            <td class="cell-tier">Advanced</td>
+            <td class="cell-tier">Advanced</td>
+            <td class="cell-tier"><strong>Competitor Spy</strong></td>
           </tr>
           <tr>
-            <td>Developer API Access</td>
-            <td class="cell-tier"><span class="cross-icon">✕</span></td>
-            <td class="cell-tier"><span class="cross-icon">✕</span></td>
-            <td class="cell-tier"><span class="check-icon">✓</span></td>
-          </tr>
-          <tr>
-            <td>Support SLA</td>
+            <td>Support</td>
             <td class="cell-tier">Community</td>
+            <td class="cell-tier">Email</td>
             <td class="cell-tier">Priority Email</td>
-            <td class="cell-tier"><strong>24/7 Priority Support</strong></td>
+            <td class="cell-tier"><strong>24/7 Priority</strong></td>
           </tr>
         </tbody>
       </table>
@@ -945,8 +989,13 @@
     const billingToggle = document.getElementById('billing-toggle');
     const monthlyLabel = document.getElementById('monthly-label');
     const annualLabel = document.getElementById('annual-label');
+    
     const starterPrice = document.getElementById('starter-price');
     const starterPeriod = document.getElementById('starter-period');
+    
+    const clipperPrice = document.getElementById('clipper-price');
+    const clipperPeriod = document.getElementById('clipper-period');
+    
     const proPrice = document.getElementById('pro-price');
     const proPeriod = document.getElementById('pro-period');
 
@@ -955,17 +1004,27 @@
         // Annual
         monthlyLabel.classList.remove('active');
         annualLabel.classList.add('active');
+        
         starterPrice.textContent = '15';
         starterPeriod.textContent = '/ month (billed annually)';
-        proPrice.textContent = '39';
+        
+        clipperPrice.textContent = '22';
+        clipperPeriod.textContent = '/ month (billed annually)';
+        
+        proPrice.textContent = '55';
         proPeriod.textContent = '/ month (billed annually)';
       } else {
         // Monthly
         annualLabel.classList.remove('active');
         monthlyLabel.classList.add('active');
+        
         starterPrice.textContent = '19';
         starterPeriod.textContent = '/ month';
-        proPrice.textContent = '49';
+        
+        clipperPrice.textContent = '29';
+        clipperPeriod.textContent = '/ month';
+        
+        proPrice.textContent = '69';
         proPeriod.textContent = '/ month';
       }
     });
@@ -985,10 +1044,13 @@
     function openCheckoutModal(tierName) {
       const isAnnual = billingToggle.checked;
       let priceText = '$0 / mo';
+      
       if (tierName === 'Starter') {
         priceText = isAnnual ? '$15 / mo ($180 billed annually)' : '$19 / mo';
+      } else if (tierName === 'Clipper') {
+        priceText = isAnnual ? '$22 / mo ($264 billed annually)' : '$29 / mo';
       } else if (tierName === 'Pro') {
-        priceText = isAnnual ? '$39 / mo ($468 billed annually)' : '$49 / mo';
+        priceText = isAnnual ? '$55 / mo ($660 billed annually)' : '$69 / mo';
       }
 
       document.getElementById('modal-plan-title').textContent = tierName + ' Plan';
